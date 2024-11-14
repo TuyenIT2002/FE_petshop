@@ -1,0 +1,59 @@
+// Menu wrapper
+.menu-list {
+    width: 224px;
+    .menu-item {
+        margin-left: 0;
+    }
+}
+
+.menu-popper {
+    padding-bottom: 8px;
+}
+
+.menu-body {
+    overflow-y: auto; /*khi nội dung lớn ra thì có thể cuộn được */
+}
+
+// Menu items
+.menu-item {
+    width: 100%;
+    justify-content: flex-start; /* Bỏ đi thuộc tính center mà thẻ đang có và thay vào đó là căn lề trái*/
+    border-radius: 0;
+    padding: 11px 16 px;
+    line-height: 1.8rem;
+    color: var(--color-text);
+    align-items: center;
+    font-weight: 400;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+// Header
+.header {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+    flex-shrink: 0; /*khi có nhiều phần tử cuộn lên thì height header bị giảm nên dùng thuộc tính này cho height không bị giảm nữa */
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.header-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: var(--font-size-menu);
+}

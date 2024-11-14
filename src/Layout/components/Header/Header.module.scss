@@ -1,8 +1,17 @@
 .wrapper {
+    --search-height: 40px;
+    --class-icon-search-width: 46px;
+    --input-search-width: 200px;
+    --search-top-spacer: 6px;
+    --search-border-radius: 20px;
+
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    background-color: var(--while);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
     height: 70px;
+    width: 100%;
+    position: fixed;
 }
 
 .inner {
@@ -13,13 +22,90 @@
     align-items: center;
     margin: 0 20px;
 }
-
+// LOGO
 .logo {
     align-items: center;
     justify-content: center;
+    flex: 1;
+    img {
+        width: 200px;
+        height: 50px;
+    }
 }
 
-.logo img {
-    width: 200px;
-    height: 50px;
+// NAVIGATION
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .pets {
+        display: flex;
+        align-items: center;
+        .faAngleDown {
+            margin: 0 0 0 10px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        padding: 21px;
+        color: var(--color-text);
+        &:hover {
+            background-color: var(--bgr-outline-horver);
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+// ACTION
+.action {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+
+    .cart {
+        width: 52px;
+        height: 50px;
+        position: relative;
+        margin: 20px;
+    }
+    .cart .icon-cart {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        font-size: 30px;
+        padding: 5px;
+        color: var(--primary);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .cart .cart-notification {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 4px;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        background-color: red;
+        color: var(--while);
+        border-radius: 50%;
+        user-select: none;
+    }
+
+    .avata {
+        width: 36px;
+        height: 36px;
+        margin-left: var(--mgleft);
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
