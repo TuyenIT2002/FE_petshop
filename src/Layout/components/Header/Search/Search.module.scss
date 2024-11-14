@@ -1,0 +1,56 @@
+.search {
+    display: flex;
+    border: 1.2px solid #7b7b7b;
+    width: calc(var(--class-icon-search-width) + var(--input-search-width) + var(--mgleft));
+    height: var(--search-height);
+    border-radius: var(--search-border-radius);
+    position: relative;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        width: 1px;
+        top: var(--search-top-spacer);
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+        position: absolute;
+        background-color: rgba(22, 24, 35, 0.12);
+        left: calc(var(--input-search-width) + 20px);
+    }
+    input {
+        width: 200px;
+        outline: none;
+        border: none;
+        margin-left: 20px;
+        font-size: 1.6rem;
+        background-color: transparent;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        /* khi không còn chữ của thuộc tính flacehodler thì chuyển trạng thái của search-btn*/
+        color: rgb(22, 24, 35);
+    }
+
+    &:hover {
+        border: 1.4px solid #000;
+    }
+
+    &:hover .search-btn {
+        cursor: pointer;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}
+
+.search-btn {
+    width: var(--class-icon-search-width);
+    height: 100%;
+    font-size: 2.2rem;
+    color: #4f4f4f;
+    text-align: center;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+
+    .icon-search {
+        padding: 5px 0 0 0;
+    }
+}

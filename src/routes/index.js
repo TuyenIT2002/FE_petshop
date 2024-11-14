@@ -8,7 +8,7 @@ import config from '~/components/config/config';
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.pet, component: Pet },
-    { path: config.routes.blog, component: Blog, layout: null },
+    { path: config.routes.blog, component: Blog },
     { path: config.routes.contact, component: Contact },
 ];
 

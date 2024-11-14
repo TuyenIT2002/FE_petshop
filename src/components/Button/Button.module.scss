@@ -1,0 +1,91 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: var(--while);
+    user-select: none;
+
+    /* cứ nút nào đứng sau một nút thì cách nhau 8px*/
+    + .wrapper {
+        margin-left: 8px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    /*Nếu icon nằm bên trái hoặc bên phải title thì luôn cách đều*/
+    margin-left: 8px;
+}
+
+.icon {
+    // display: inline-block; /* dùng thuộc tính này để có thể set width*/
+    width: 24px;
+    height: 22px;
+    text-align: center;
+    margin-right: 4px;
+}
+
+// Button types
+
+.rounded {
+    border-radius: 2px;
+    // box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-color: rgba(22, 24, 35, 0.12);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--while) !important;
+    border-color: var(--primary);
+
+    &:hover {
+        border-color: var(--primary);
+        background: var(--color-button-horver);
+    }
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor; /* Lấy lại màu của thuộc tính trên*/
+
+    &:hover {
+        border-color: currentColor;
+        background-color: var(--bgr-outline-horver);
+        transition: 0.3s ease;
+    }
+}
+
+.text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Button sizes
+.small {
+    min-width: 110px;
+    height: 36px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 140px;
+}
