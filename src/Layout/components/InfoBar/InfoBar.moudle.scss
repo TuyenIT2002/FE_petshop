@@ -1,0 +1,23 @@
+.wrapper {
+    margin: 40px;
+    display: flex;
+
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.ship-bar,
+.money-bar,
+.clock-bar,
+.gift-bar {
+    text-align: center;
+}
+
+p {
+    padding-top: 6px;
+}
