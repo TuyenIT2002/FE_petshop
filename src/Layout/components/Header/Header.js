@@ -104,11 +104,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handelMenuChange}>
                         {currentUser ? (
-                            <Image
-                                className={cx('avata')}
-                                src="https://scontent.fhan7-1.fna.fbcdn.net/v/t39.30808-1/447291337_1669760463761018_6779719580150290382_n.jpg?stp=dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=mp-JKeozuBcQ7kNvgH8ZZBm&_nc_zt=24&_nc_ht=scontent.fhan7-1.fna&_nc_gid=AoxJAOgM_uG-Xrh4nUUZ8nD&oh=00_AYC0Iegq7p88i4_tr2vFkvvorO7UCWFCruni8XWn8-hagQ&oe=6732A8E7"
-                                alt="anh avata"
-                            />
+                            <Image className={cx('avata')} src="" alt="anh avata" />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />
