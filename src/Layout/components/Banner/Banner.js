@@ -38,7 +38,6 @@ const LIST_IMAGE_BANNER = [
 function Banner() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const totalSlides = LIST_IMAGE_BANNER.length;
-    console.log('curentIndex: ', currentIndex);
 
     const prevSlide = () => {
         return setCurrentIndex((currentIndex - 1 + totalSlides) % totalSlides);
@@ -49,8 +48,6 @@ function Banner() {
 
     useEffect(() => {
         const interval = setInterval(nextSlide, 3000);
-        console.log('interval:', interval);
-
         return () => clearInterval(interval);
     }, [currentIndex]);
 

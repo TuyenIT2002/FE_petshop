@@ -1,7 +1,13 @@
 import Banner from '~/Layout/components/Banner';
+import InfoBar from '~/Layout/components/InfoBar';
 
 function Home() {
-    return <Banner />;
+    return (
+        <>
+            <Banner />
+            <InfoBar />
+        </>
+    );
 }
 
 export default Home;
