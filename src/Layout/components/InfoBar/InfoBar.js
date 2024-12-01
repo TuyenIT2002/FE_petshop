@@ -1,4 +1,4 @@
-import styles from './InfoBar.moudle.scss';
+import styles from './InfoBar.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruckMoving, faDollarSign, faClock, faGift } from '@fortawesome/free-solid-svg-icons';

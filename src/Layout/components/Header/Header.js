@@ -72,12 +72,12 @@ function Header() {
                 <div className={cx('navigation')}>
                     <Link to={config.routes.home}>
                         <div className={cx('home')}>
-                            <h2>HOME</h2>
+                            <h2>TRANG CHỦ</h2>
                         </div>
                     </Link>
                     <Link to={config.routes.pet}>
                         <div className={cx('pets')}>
-                            <h2>PETS</h2>
+                            <h2>THÚ CƯNG</h2>
                             <FontAwesomeIcon className={cx('faAngleDown')} icon={faAngleDown} />
                         </div>
                     </Link>
@@ -88,7 +88,7 @@ function Header() {
                     </Link>
                     <Link to={config.routes.contact}>
                         <div className={cx('contact')}>
-                            <h2>CONTACT</h2>
+                            <h2>LIÊN HỆ</h2>
                         </div>
                     </Link>
                 </div>
@@ -98,17 +98,12 @@ function Header() {
                         <FontAwesomeIcon className={cx('icon-cart')} icon={faCartShopping} />
                         <span className={cx('cart-notification')}>1</span>
                     </div>
-                    <>
-                        <Button outline>login</Button>
-                    </>
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handelMenuChange}>
                         {currentUser ? (
                             <Image className={cx('avata')} src="" alt="anh avata" />
                         ) : (
-                            <button className={cx('more-btn')}>
-                                <FontAwesomeIcon icon={faEllipsisVertical} />
-                            </button>
+                            <Button outline>Đăng nhập</Button>
                         )}
                     </Menu>
                 </div>

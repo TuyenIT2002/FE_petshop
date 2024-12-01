@@ -1,0 +1,22 @@
+.wrapper {
+    margin-top: var(--margin-top);
+    .header {
+        text-align: center;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap; // tự động xuống dòng khi hết chỗ
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    .star-icon {
+        color: #ffb423;
+    }
+    .show-more-btn {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
