@@ -1,0 +1,24 @@
+.wrapper {
+    margin-top: var(--margin-top);
+    .header {
+        text-align: center;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap; // tự động xuống dòng khi hết chỗ
+        gap: 20px;
+        justify-content: space-evenly;
+        // max-height: calc(2 * (var(--height-item-product) + 20px));
+        // overflow: hidden; // ẩn các sản phẩm vượt quá chiều cao
+    }
+    .star-icon {
+        color: var(--color-star);
+    }
+    .show-more-btn {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
