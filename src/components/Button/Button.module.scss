@@ -73,6 +73,8 @@
 }
 
 .text {
+    background-color: transparent;
+
     &:hover {
         text-decoration: underline;
     }
