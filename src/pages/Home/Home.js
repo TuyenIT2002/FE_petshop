@@ -4,6 +4,7 @@ import FeatureProduct from '~/Layout/components/FeatureProduct';
 import NewProduct from '~/Layout/components/NewProduct';
 import BestSellerAndLike from '~/Layout/components/BestSellerAndLike';
 import Blog from '~/Layout/components/Blog';
+import Contact from '~/Layout/components/Contact';
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <NewProduct />
             <BestSellerAndLike />
             <Blog />
+            <Contact />
         </>
     );
 }

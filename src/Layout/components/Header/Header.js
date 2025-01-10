@@ -12,7 +12,7 @@ import {
     faAngleDown,
     faCartShopping,
     faEarthAsia,
-    faEllipsisVertical,
+    // faEllipsisVertical,
     faUser,
     faSignOut,
 } from '@fortawesome/free-solid-svg-icons';

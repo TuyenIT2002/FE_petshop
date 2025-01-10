@@ -1,0 +1,100 @@
+.wrapper {
+    background-color: #ccc;
+    height: 400px;
+    .wrapper-footer-top {
+        width: 100%;
+        height: 340px;
+        margin-top: var(--margin-top);
+        display: flex;
+        justify-content: space-around;
+
+        h3 {
+            margin: 40px 0 35px 0;
+            color: var(--primary);
+            font-weight: 1.8rem;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+
+        .footer-contact {
+            .icon-address,
+            .icon-phone,
+            .icon-mail {
+                color: var(--primary);
+            }
+            p {
+                padding: 5px 0;
+            }
+            a {
+                color: var(--color-text);
+                margin: 10px 0;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--primary);
+                    transition: 0.1s ease;
+                }
+            }
+        }
+        .footer-policy {
+            ul {
+                list-style-position: inside; // những nút chấm của thẻ li căn thẳng vào lề
+            }
+            li {
+                padding-bottom: 10px;
+            }
+        }
+        .footer-support {
+            ul {
+                list-style-position: inside;
+            }
+            li {
+                padding-bottom: 10px;
+            }
+        }
+        .footer-fanpage {
+            .icon {
+                margin-right: 10px;
+                font-size: 2.4rem;
+            }
+            .icon-fb {
+                color: #0866ff;
+            }
+            .icon-ig {
+                color: #e1306c;
+            }
+            .icon-tiktok {
+                color: var(--color-text);
+            }
+        }
+    }
+
+    .wrapper-footer-copyright {
+        height: 60px;
+        background-color: var(--primary);
+        position: relative;
+        display: flex;
+        align-items: center;
+        a {
+            color: var(--while);
+            margin: 0 10px;
+        }
+
+        .navigation {
+            position: absolute;
+            display: flex;
+            right: 40%;
+            top: 14px;
+            p {
+                font-size: 1.8rem;
+                &:hover {
+                    color: #e7e6e6;
+                    transition: 0.1s ease;
+                }
+            }
+        }
+    }
+}
